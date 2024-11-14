@@ -331,7 +331,7 @@
         alt_tab_end: alt_tab_end {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LEFT_GUI &to 0>, <&macro_tap>;
+            bindings = <&macro_release>, <&kp LEFT_GUI>, <&macro_tap>, <&to 0>;
 
             label = "ALT_TAB_END";
         };
