@@ -480,10 +480,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &none  &none        &none    &none           &none         &none         &none         &none  &none
-       &none  &none  &none        &none    &none           &none         &none         &none         &none  &none
-&none  &none  &none  &none        &sl 5    &none           &none         &none         &none         &none  &none  &none
-                     &kp LS(TAB)  &kp TAB  &alt_tab_end    &alt_tab_end  &alt_tab_end  &alt_tab_end
+       &none  &none  &none    &none        &none           &none         &none         &none         &none  &none
+       &none  &none  &none    &none        &none           &none         &none         &none         &none  &none
+&none  &none  &none  &none    &sl 5        &none           &none         &none         &none         &none  &none  &none
+                     &kp TAB  &kp LS(TAB)  &alt_tab_end    &alt_tab_end  &alt_tab_end  &alt_tab_end
             >;
         };
 
