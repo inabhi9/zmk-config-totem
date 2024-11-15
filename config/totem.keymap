@@ -232,6 +232,7 @@
             quick-tap-ms = <170>;
             require-prior-idle-ms = <50>;
             flavor = "hold-preferred";
+            hold-trigger-on-release;
         };
 
         hold_sticky: hold_sticky {
