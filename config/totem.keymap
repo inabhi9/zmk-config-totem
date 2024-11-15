@@ -335,6 +335,22 @@
 
             label = "ALT_TAB_END";
         };
+
+        vsc_2args: vsc_1arg {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LEFT_GUI &macro_param_2to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>;
+
+            label = "VSC_1ARG";
+        };
     };
 
     keymap {
@@ -472,10 +488,10 @@
 
         vscode {
             bindings = <
-        &trans  &trans         &kp LS(LC(LG(DOWN)))  &trans         &kp LA(LG(LS(T)))    &kp LG(T)  &kp RG(B)  &kp RG(SINGLE_QUOTE)  &kp RS(RA(RG(RIGHT_BRACKET)))  &kp LG(P)
-        &trans  &kp LG(LS(F))  &trans                &kp LA(LS(F))  &trans               &trans     &trans     &trans                &trans                         &trans
-&trans  &trans  &trans         &kp LG(LS(P))         &trans         &trans               &trans     &trans     &trans                &trans                         &trans     &trans
-                               &trans                &trans         &trans               &trans     &trans     &trans
+                   &trans  &trans         &kp LS(LC(LG(DOWN)))  &trans         &kp LA(LG(LS(T)))    &kp LG(T)  &kp RG(B)  &vsc_2args K Z  &kp RS(RA(RG(RIGHT_BRACKET)))  &kp LG(P)
+                   &trans  &kp LG(LS(F))  &trans                &kp LA(LS(F))  &trans               &trans     &trans     &kp LG(J)       &trans                         &trans
+&vsc_2args SEMI C  &trans  &trans         &kp LG(LS(P))         &trans         &trans               &trans     &trans     &trans          &trans                         &trans     &trans
+                                          &trans                &trans         &trans               &trans     &trans     &trans
             >;
         };
 
