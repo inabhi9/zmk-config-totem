@@ -379,7 +379,7 @@
                          &kp Q                     &kp W                     &kp E                       &kp R                         &kp T        &kp Y                    &kp U                          &kp I                       &kp O                      &kp P
                          &homerow_mods LEFT_GUI A  &homerow_mods LEFT_ALT S  &homerow_mods LEFT_SHIFT D  &homerow_mods LEFT_CONTROL F  &kp G        &kp H                    &homerow_mods RIGHT_CONTROL J  &homerow_mods LEFT_SHIFT K  &homerow_mods RIGHT_ALT L  &homerow_mods RIGHT_GUI SEMI
 &mt LEFT_CONTROL ESCAPE  &kp Z                     &kp X                     &kp C                       &kp V                         &kp B        &kp N                    &kp M                          &kp COMMA                   &kp DOT                    &question_exclamation         &mt RG(RA(RC(RIGHT_SHIFT))) SINGLE_QUOTE
-                                                                             &kp LG(SPACE)               &alt_tab_bhv 1 0              &kp SPACE    &thumb_sticky_layer 2 4  &kp RA(SPACE)                  &kp ENTER
+                                                                             &alt_tab                    &thumb_sticky_layer 1 4       &kp SPACE    &thumb_sticky_layer 2 4  &kp RA(SPACE)                  &kp ENTER
             >;
         };
 
@@ -428,10 +428,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp F11  &kp F12  &kp F13  &kp F14  &kp F15    &trans  &trans        &trans      &trans             &trans
-        &kp F6   &kp F7   &kp F8   &kp F9   &kp F10    &trans  &trans        &trans      &trans             &trans
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &trans  &kp C_VOL_UP  &kp C_MUTE  &kp C_VOLUME_DOWN  &trans  &trans
-                          &trans   &trans   &trans     &trans  &trans        &trans
+        &none  &kp F7  &kp F8  &kp F9  &kp F12    &trans  &trans                &kp LS(LA(LC(UP_ARROW)))  &trans                &trans
+        &none  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &kp C_BRIGHTNESS_DEC  &trans                    &kp C_BRIGHTNESS_INC  &trans
+&trans  &none  &kp F1  &kp F2  &kp F3  &kp F10    &trans  &kp C_VOL_DN          &kp C_MUTE                &kp C_VOLUME_UP       &trans  &trans
+                       &trans  &trans  &trans     &trans  &trans                &trans
             >;
         };
 
@@ -480,10 +480,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &none  &none   &none    &none    &none   &none  &none         &none  &none
-       &none  &none  &none   &none    &none    &none   &none  &none         &none  &none
-&none  &none  &none  &none   &sl 5    &none    &none   &none  &none         &none  &none  &none
-                     &trans  &kp TAB  &none    &gresc  &none  &alt_tab_end
+       &none  &none  &none        &none    &none           &none         &none         &none         &none  &none
+       &none  &none  &none        &none    &none           &none         &none         &none         &none  &none
+&none  &none  &none  &none        &sl 5    &none           &none         &none         &none         &none  &none  &none
+                     &kp LS(TAB)  &kp TAB  &alt_tab_end    &alt_tab_end  &alt_tab_end  &alt_tab_end
             >;
         };
 
