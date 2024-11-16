@@ -292,6 +292,8 @@
             label = "SHIFT_CAPSW";
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+
+            tapping-term-ms = <350>;
         };
     };
 
