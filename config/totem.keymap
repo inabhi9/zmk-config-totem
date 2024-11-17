@@ -364,10 +364,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q  &kp W  &kp E                       &kp R            &kp T                                &kp Y         &kp U             &kp I             &kp O    &kp P
-            &kp A  &kp S  &hrm LEFT_ALT D             &hrm LEFT_GUI F  &kp G                                &kp H         &hrm RIGHT_GUI J  &hrm RIGHT_ALT K  &kp L    &kp SEMI
-&kp ESCAPE  &kp Z  &kp X  &kp C                       &kp V            &kp B                                &kp N         &kp M             &kp COMMA         &kp DOT  &que_excl  &kp SINGLE_QUOTE
-                          &alt_tab_kp LEFT_CONTROL 0  &thumb_sl 1 3    &hrm LA(LC(LG(LEFT_SHIFT))) SPACE    &shift_capsw  &thumb_sl 2 3     &kp ENTER
+                   &kp Q  &kp W  &kp E                   &kp R            &kp T                                &kp Y         &kp U             &kp I                 &kp O    &kp P
+                   &kp A  &kp S  &kp D                   &hrm LEFT_ALT F  &kp G                                &kp H         &hrm RIGHT_ALT J  &kp K                 &kp L    &kp SEMI
+&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C                   &kp V            &kp B                                &kp N         &kp M             &kp COMMA             &kp DOT  &que_excl  &hrm RIGHT_CONTROL SINGLE_QUOTE
+                                 &alt_tab_kp LEFT_GUI 0  &thumb_sl 1 3    &hrm LA(LC(LG(LEFT_SHIFT))) SPACE    &shift_capsw  &thumb_sl 2 3     &hrm RIGHT_GUI ENTER
             >;
         };
 
@@ -390,10 +390,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &trans  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp HOME    &kp KP_MINUS  &kp KP_N7                   &kp KP_N8                   &kp KP_N9        &kp KP_MULTIPLY
-              &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END     &kp KP_PLUS   &hrm RIGHT_GUI KP_NUMBER_4  &hrm RIGHT_ALT KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_EQUAL
-&kp CAPSLOCK  &trans  &kp PG_UP     &none     &kp PG_DN      &trans      &kp KP_N0     &kp KP_N1                   &kp KP_N2                   &kp KP_N3        &kp KP_DOT       &mkp RCLK
-                                    &trans    &trans         &trans      &trans        &trans                      &trans
+                        &trans  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp HOME    &kp KP_MINUS  &kp KP_N7                   &kp KP_N8  &kp KP_N9        &kp KP_MULTIPLY
+                        &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END     &kp KP_PLUS   &hrm RIGHT_ALT KP_NUMBER_4  &kp KP_N5  &kp KP_NUMBER_6  &kp KP_EQUAL
+&hrm LEFT_CONTROL CAPS  &trans  &kp PG_UP     &none     &kp PG_DN      &trans      &kp KP_N0     &kp KP_N1                   &kp KP_N2  &kp KP_N3        &kp KP_DOT       &mkp RCLK
+                                              &trans    &trans         &trans      &trans        &none                       &trans
             >;
         };
 
