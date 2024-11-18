@@ -277,7 +277,7 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
         };
 
         lt_repeat: lt_repeat {
