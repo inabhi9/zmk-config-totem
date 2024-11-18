@@ -209,16 +209,6 @@
     };
 
     behaviors {
-        hold_sticky: hold_sticky {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_STICKY";
-            bindings = <&kp>, <&sk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <220>;
-        };
-
         left_parenthesis: left_parenthesis {
             compatible = "zmk,behavior-mod-morph";
             label = "LEFT_PARENTHESIS";
@@ -296,8 +286,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <170>;
             require-prior-idle-ms = <60>;
             flavor = "tap-preferred";
         };
