@@ -448,10 +448,10 @@
 
         vscode_layer {
             bindings = <
-                   &trans  &trans         &kp LS(LC(LG(DOWN)))  &trans         &kp LA(LG(LS(T)))    &kp LG(T)  &kp RG(B)  &vsc_2args K Z  &kp RS(RA(RG(RIGHT_BRACKET)))  &kp LG(P)
-                   &trans  &kp LG(LS(F))  &trans                &kp LA(LS(F))  &trans               &trans     &trans     &kp LG(J)       &trans                         &trans
-&vsc_2args SEMI C  &trans  &trans         &kp LG(LS(P))         &trans         &trans               &trans     &trans     &trans          &trans                         &trans     &trans
-                                          &trans                &trans         &trans               &trans     &trans     &trans
+                   &trans  &trans         &kp LS(LC(LG(DOWN)))    &trans         &kp LA(LG(LS(T)))    &kp LG(T)  &kp RG(B)  &vsc_2args K Z  &kp RS(RA(RG(RIGHT_BRACKET)))  &kp LG(P)
+                   &trans  &kp LG(LS(F))  &kp LA(LS(DOWN_ARROW))  &kp LA(LS(F))  &trans               &trans     &trans     &kp LG(J)       &trans                         &trans
+&vsc_2args SEMI C  &trans  &trans         &kp LG(LS(P))           &trans         &trans               &trans     &trans     &trans          &trans                         &trans     &trans
+                                          &trans                  &trans         &trans               &trans     &trans     &trans
             >;
         };
 
