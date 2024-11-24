@@ -294,47 +294,39 @@
     };
 
     macros {
-        company_email: company_email {
+        com_email: com_email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp A &kp B &kp H &kp I &kp N &kp A &kp V &kp DOT &kp K &kp O &kp T &kp A &kp K &kp AT &kp S &kp E &kp N &kp N &kp D &kp E &kp R &kp DOT &kp C &kp O &kp M>;
-            label = "COMPANY_EMAIL";
+            label = "COM_EMAIL";
         };
 
-        alt_tab: alt_tab {
+        prs_email: prs_email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI>,
-                <&macro_tap>,
-                <&kp TAB &to 3>;
-
-            label = "ALT_TAB";
+            bindings = <&kp K &kp O &kp T &kp A &kp K &kp AT &kp L &kp D &kp O &kp P &kp A &kp DOT &kp I &kp N>;
+            label = "PRS_EMAIL";
         };
 
-        alt_tab_end: alt_tab_end {
+        prs_email2: prs_email2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp LEFT_GUI>, <&macro_tap>, <&to 0>;
-
-            label = "ALT_TAB_END";
+            bindings = <&kp I &kp N &kp DOT &kp A &kp B &kp H &kp I &kp N9 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "PRS_EMAIL2";
         };
 
-        vsc_2args: vsc_1arg {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI &macro_param_1to1>,
-                <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&kp LEFT_GUI &macro_param_2to1>,
-                <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>;
+        maa_acc: maa_acc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N1 &kp N6 &kp N3 &kp N4 &kp N4 &kp N0 &kp N3 &kp N7>;
+            label = "MAA_ACC";
+        };
 
-            label = "VSC_1ARG";
+        my_acc: my_acc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N7 &kp N8 &kp N7 &kp N4 &kp N8 &kp N0 &kp N1 &kp N0>;
+            label = "MY_ACC";
         };
     };
 
@@ -422,45 +414,12 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        to_app_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 1";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃ NEXT FILE ┃ MARK IN   ┃ ROTATE    ┃ MARK OUT  ┃ SHOW SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ TVP II    ┃ LEFT      ┃ PAN       ┃ RIGHT     ┃ PLAY/FLIP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃ FULLSCR   ┃ SHIFT     ┃ COPY      ┃ DELETE    ┃ PASTE     ┃ IMG MARK  ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃ UNDO/SAVE ┃  SEL/MOV  ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
+        macros {
             bindings = <
-       &none  &none  &none    &none        &none           &none         &none         &none         &none  &none
-       &none  &none  &none    &none        &none           &none         &none         &none         &none  &none
-&none  &none  &none  &sl 5    &sl 4        &none           &none         &none         &none         &none  &none  &none
-                     &kp TAB  &kp LS(TAB)  &alt_tab_end    &alt_tab_end  &alt_tab_end  &alt_tab_end
-            >;
-        };
-
-        vscode_layer {
-            bindings = <
-                   &trans  &trans         &kp LS(LC(LG(DOWN)))    &trans         &kp LA(LG(LS(T)))    &kp LG(T)  &kp RG(B)  &vsc_2args K Z  &kp RS(RA(RG(RIGHT_BRACKET)))  &kp LG(P)
-                   &trans  &kp LG(LS(F))  &kp LA(LS(DOWN_ARROW))  &kp LA(LS(F))  &trans               &trans     &trans     &kp LG(J)       &trans                         &trans
-&vsc_2args SEMI C  &trans  &trans         &kp LG(LS(P))           &trans         &trans               &trans     &trans     &trans          &trans                         &trans     &trans
-                                          &trans                  &trans         &trans               &trans     &trans     &trans
-            >;
-        };
-
-        chrome_layer {
-            bindings = <
-        &trans         &trans  &trans  &trans  &kp LG(T)    &trans  &trans  &kp LG(LS(N))  &trans  &trans
-        &kp LG(L)      &trans  &trans  &trans  &trans       &trans  &trans  &trans         &trans  &trans
-&trans  &kp LG(LS(T))  &trans  &trans  &trans  &trans       &trans  &trans  &trans         &trans  &trans  &trans
-                               &trans  &trans  &trans       &trans  &trans  &trans
+       &none  &none  &com_email   &none   &none       &none   &none   &none   &none  &none
+       &none  &none  &prs_email2  &none   &my_acc     &none   &none   &none   &none  &none
+&none  &none  &none  &prs_email   &none   &maa_acc    &none   &none   &none   &none  &none  &none
+                     &trans       &trans  &trans      &trans  &trans  &trans
             >;
         };
 
