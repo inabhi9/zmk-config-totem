@@ -337,10 +337,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LA(LC(LG(GLOBE)))>,
+                <&kp LA(LC(LG(LEFT_SHIFT))) &kp GLOBE>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LA(LC(LG(GLOBE)))>;
+                <&kp LA(LC(LG(LEFT_SHIFT))) &kp GLOBE>;
 
             label = "SUPERMEH";
         };
