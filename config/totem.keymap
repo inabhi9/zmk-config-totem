@@ -177,30 +177,20 @@
             bindings = <&kp LS(LA(LEFT))>;
             key-positions = <1 2>;
             layers = <1 0>;
+            timeout-ms = <50>;
         };
 
         select_word_r {
             bindings = <&kp LS(LA(RIGHT))>;
             key-positions = <3 2>;
             layers = <1 0>;
+            timeout-ms = <50>;
         };
 
         forward_slash {
             bindings = <&kp SLASH>;
             key-positions = <17 28>;
             layers = <0 1>;
-        };
-
-        backspace_l {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <2 1>;
-            layers = <0>;
-        };
-
-        delete_l {
-            bindings = <&kp DELETE>;
-            key-positions = <2 3>;
-            layers = <0>;
         };
 
         spotlight {
