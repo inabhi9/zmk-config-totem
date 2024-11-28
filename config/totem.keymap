@@ -259,7 +259,7 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <400>;
         };
 
         lt_repeat: lt_repeat {
@@ -359,10 +359,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                        &trans  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp HOME    &kp KP_MINUS  &kp KP_N7                   &kp KP_N8              &kp KP_N9        &kp KP_MULTIPLY
-                        &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END     &kp KP_PLUS   &hrm RIGHT_ALT KP_NUMBER_4  &hrm RGUI KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_EQUAL
-&hrm LEFT_CONTROL CAPS  &trans  &kp PG_UP     &none     &kp PG_DN      &trans      &kp KP_N0     &kp KP_N1                   &kp KP_N2              &kp KP_N3        &kp KP_DOT       &mkp RCLK
-                                              &trans    &trans         &trans      &trans        &trans                      &trans
+                        &trans  &kp LA(LEFT)  &kp UP              &kp LA(RIGHT)        &kp HOME    &kp KP_MINUS  &kp KP_N7                   &kp KP_N8              &kp KP_N9        &kp KP_MULTIPLY
+                        &trans  &kp LEFT      &hrm LEFT_GUI DOWN  &hrm LEFT_ALT RIGHT  &kp END     &kp KP_PLUS   &hrm RIGHT_ALT KP_NUMBER_4  &hrm RGUI KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_EQUAL
+&hrm LEFT_CONTROL CAPS  &trans  &kp PG_UP     &none               &kp PG_DN            &trans      &kp KP_N0     &kp KP_N1                   &kp KP_N2              &kp KP_N3        &kp KP_DOT       &mkp RCLK
+                                              &trans              &trans               &trans      &trans        &trans                      &trans
             >;
         };
 
