@@ -30,7 +30,7 @@
 
         lastapp {
             bindings = <&kp LG(TAB)>;
-            key-positions = <35 36>;
+            key-positions = <33 34>;
             timeout-ms = <60>;
             layers = <0>;
         };
@@ -191,11 +191,6 @@
             bindings = <&kp SLASH>;
             key-positions = <17 28>;
             layers = <0 1>;
-        };
-
-        spotlight {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <33 34>;
         };
     };
 
