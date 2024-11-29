@@ -276,7 +276,7 @@
         kp_dot: kp_dot {
             compatible = "zmk,behavior-mod-morph";
             label = "KP_DOT";
-            bindings = <&kp DOT>, <&kp F24>;
+            bindings = <&kp DOT>, <&kp F12>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
@@ -286,7 +286,7 @@
         kp_comma: kp_comma {
             compatible = "zmk,behavior-mod-morph";
             label = "KP_COMMA";
-            bindings = <&kp COMMA>, <&kp F23>;
+            bindings = <&kp COMMA>, <&kp F11>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
