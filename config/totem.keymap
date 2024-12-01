@@ -177,14 +177,14 @@
             bindings = <&kp LS(LA(LEFT))>;
             key-positions = <1 2>;
             layers = <1 0>;
-            timeout-ms = <50>;
+            timeout-ms = <40>;
         };
 
         select_word_r {
             bindings = <&kp LS(LA(RIGHT))>;
             key-positions = <3 2>;
             layers = <1 0>;
-            timeout-ms = <50>;
+            timeout-ms = <40>;
         };
 
         forward_slash {
@@ -314,14 +314,14 @@
         maa_acc: maa_acc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N1 &kp N6 &kp N3 &kp N4 &kp N4 &kp N0 &kp N3 &kp N7>;
+            bindings = <&kp N1 &kp N1 &kp N6 &kp N3 &kp N4 &kp N4 &kp N0 &kp N3 &kp N7 &kp ENTER>;
             label = "MAA_ACC";
         };
 
         my_acc: my_acc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N2 &kp N7 &kp N8 &kp N7 &kp N4 &kp N8 &kp N0 &kp N1 &kp N0>;
+            bindings = <&kp N2 &kp N7 &kp N8 &kp N7 &kp N4 &kp N8 &kp N0 &kp N1 &kp N0 &kp ENTER>;
             label = "MY_ACC";
         };
     };
@@ -412,10 +412,10 @@
 
         macros {
             bindings = <
-       &none  &none  &com_email   &none   &none       &none   &none   &none   &none  &none
-       &none  &none  &prs_email2  &none   &my_acc     &none   &none   &none   &none  &none
-&none  &none  &none  &prs_email   &none   &maa_acc    &none   &none   &none   &none  &none  &none
-                     &trans       &trans  &trans      &trans  &trans  &trans
+       &none  &none  &com_email   &none  &none       &none  &none  &none  &none  &none
+       &none  &none  &prs_email2  &none  &my_acc     &none  &none  &none  &none  &none
+&none  &none  &none  &prs_email   &none  &maa_acc    &none  &none  &none  &none  &none  &none
+                     &none        &none  &none       &none  &none  &none
             >;
         };
 
