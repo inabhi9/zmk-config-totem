@@ -198,6 +198,11 @@
             bindings = <&mo 3>;
             key-positions = <20 33>;
         };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <15 5>;
+        };
     };
 
     behaviors {
