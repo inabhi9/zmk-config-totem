@@ -304,6 +304,8 @@
             label = "SK_L1";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 1>;
+
+            tapping-term-ms = <350>;
         };
     };
 
