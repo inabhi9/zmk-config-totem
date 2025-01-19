@@ -256,7 +256,7 @@
             quick-tap-ms = <250>;
             flavor = "balanced";
             hold-trigger-on-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <100>;
         };
 
         shift_capsw: shift_capsw {
@@ -397,7 +397,7 @@
                         &none  &kp LA(LEFT)  &kp UP              &kp LA(RIGHT)        &kp HOME    &none         &kp KP_N7                   &kp KP_N8              &kp KP_N9        &kp KP_MINUS
                         &none  &kp LEFT      &hrm LEFT_GUI DOWN  &hrm LEFT_ALT RIGHT  &kp END     &kp KP_EQUAL  &hrm RIGHT_ALT KP_NUMBER_4  &hrm RGUI KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
 &hrm LEFT_CONTROL CAPS  &none  &kp PG_UP     &none               &kp PG_DN            &none       &kp KP_N0     &kp KP_N1                   &kp KP_N2              &kp KP_N3        &kp KP_DOT    &mkp RCLK
-                                             &trans              &trans               &trans      &trans        &trans                      &trans
+                                             &to 0               &trans               &trans      &trans        &trans                      &trans
             >;
         };
 
