@@ -310,11 +310,10 @@
         mm_cmdspace: mm_cmdspace {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_CMDSPACE";
-            bindings = <&hrm LEFT_GUI SPACE>, <&kp SPACE>;
+            bindings = <&hrm LEFT_GUI SPACE>, <&kp LG(SPACE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-            keep-mods = <(MOD_LGUI)>;
         };
     };
 
