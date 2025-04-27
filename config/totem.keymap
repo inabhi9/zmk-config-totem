@@ -196,7 +196,7 @@
 
         macro_layer {
             bindings = <&mo 3>;
-            key-positions = <20 32>;
+            key-positions = <20 33>;
         };
 
         caret {
