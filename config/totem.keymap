@@ -374,10 +374,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                   &kp Q  &kp W  &kp E               &kp R                &kp T                              &kp Y          &kp U             &kp I               &kp O    &kp P
-                   &kp A  &kp S  &hrm LEFT_GUI D     &hrm LEFT_ALT F      &kp G                              &kp H          &hrm RIGHT_ALT J  &hrm RIGHT_GUI K    &kp L    &kp SEMI
-&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C               &kp V                &kp B                              &kp N          &kp M             &kp_comma           &kp_dot  &que_excl  &hrm RA(RC(RIGHT_GUI)) SINGLE_QUOTE
-                                 &lt_repeat 1 ENTER  &hrm LEFT_SHIFT TAB  &hrm LA(LC(LS(LEFT_GUI))) SPACE    &kp BACKSPACE  &shift_capsw      &lt_repeat 2 ENTER
+                   &kp Q  &kp W  &kp E               &kp R                &kp T                 &kp Y          &kp U             &kp I               &kp O    &kp P
+                   &kp A  &kp S  &hrm LEFT_GUI D     &hrm LEFT_ALT F      &kp G                 &kp H          &hrm RIGHT_ALT J  &hrm RIGHT_GUI K    &kp L    &kp SEMI
+&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C               &kp V                &kp B                 &kp N          &kp M             &kp_comma           &kp_dot  &que_excl  &hrm RA(RC(RIGHT_GUI)) SINGLE_QUOTE
+                                 &lt_repeat 1 ENTER  &hrm LEFT_SHIFT TAB  &lt_repeat 4 SPACE    &kp BACKSPACE  &shift_capsw      &lt_repeat 2 ENTER
             >;
         };
 
@@ -442,6 +442,15 @@
        &none  &none  &prs_email2  &none  &my_acc     &none  &none  &none  &none  &none
 &none  &none  &none  &prs_email   &none  &maa_acc    &none  &none  &none  &none  &none  &none
                      &none        &none  &none       &none  &none  &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+                        &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LG(LC(T))))    &kp RS(RC(RA(RG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))      &kp LS(LA(LC(LG(O))))    &kp LS(LA(LC(LG(P))))
+                        &kp LS(LA(LC(LG(A))))  &kp LA(LS(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))    &kp LS(LA(LG(LC(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))      &kp LS(LA(LC(LG(L))))    &kp LS(LA(LC(LG(SEMI))))
+&kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LC(LA(LG(C))))  &kp LS(LC(LG(LA(V))))  &kp LS(LC(LA(LG(B))))    &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LC(LG(COMMA))))  &kp LS(LA(LC(LG(DOT))))  &kp LS(LA(LC(LG(QMARK))))  &kp LS(LA(LC(LG(SQT))))
+                                                                      &trans                 &trans                 &trans                   &trans                 &trans                 &trans
             >;
         };
 
