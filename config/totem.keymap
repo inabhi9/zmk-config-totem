@@ -25,6 +25,8 @@
 
 &sk { quick-release; };
 
+&caps_word { mods = <(MOD_LSFT|MOD_RSFT)>; };
+
 / {
     combos {
         compatible = "zmk,combos";
