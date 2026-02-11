@@ -81,7 +81,7 @@
         };
 
         hyphen {
-            bindings = <&kp KP_MINUS>;
+            bindings = <&kp MINUS>;
             key-positions = <16 27>;
             layers = <0 1>;
         };
