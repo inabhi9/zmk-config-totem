@@ -210,6 +210,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <6 7>;
         };
+
+        homerow {
+            bindings = <&kp LS(LA(LC(LG(K_SELECT))))>;
+            key-positions = <16 17 18>;
+        };
     };
 
     behaviors {
