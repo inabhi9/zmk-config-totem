@@ -128,8 +128,8 @@
             layers = <0 1>;
         };
 
-        emoji {
-            bindings = <&kp LC(LG(SPACE))>;
+        homerow {
+            bindings = <&kp LC(LG(LA(LS(SPACE))))>;
             key-positions = <11 12 13>;
             layers = <0>;
         };
@@ -211,8 +211,8 @@
             key-positions = <6 7>;
         };
 
-        homerow {
-            bindings = <&kp LS(LA(LC(LG(K_SELECT))))>;
+        emoji {
+            bindings = <&kp LC(LG(SPACE))>;
             key-positions = <16 17 18>;
         };
     };
