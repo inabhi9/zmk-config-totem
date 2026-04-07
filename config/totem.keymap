@@ -28,8 +28,6 @@
 
 &caps_word { mods = <(MOD_LSFT|MOD_RSFT)>; };
 
-&msc { delay-ms = <0>; };
-
 / {
     combos {
         compatible = "zmk,combos";
