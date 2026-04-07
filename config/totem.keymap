@@ -225,7 +225,7 @@
         };
 
         comb_f14 {
-            bindings = <&kp LS(LA(LC(LG(F15))))>;
+            bindings = <&kp LS(LA(LC(LG(F14))))>;
             key-positions = <22 23 24>;
         };
 
