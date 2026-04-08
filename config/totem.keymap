@@ -129,8 +129,8 @@
             layers = <0 1>;
         };
 
-        comb3_enter_l {
-            bindings = <&kp ENTER>;
+        comb3_lm {
+            bindings = <&kp LS(LA(LC(LG(F14))))>;
             key-positions = <11 12 13>;
             layers = <0>;
         };
@@ -212,24 +212,19 @@
             key-positions = <6 7>;
         };
 
-        comb3_enter_r {
-            bindings = <&kp ENTER>;
+        comb3_rm {
+            bindings = <&kp LS(LA(LC(LG(F17))))>;
             key-positions = <16 17 18>;
         };
 
-        comb_f13 {
+        comb3_lt {
             bindings = <&kp LS(LA(LC(LG(F13))))>;
             key-positions = <1 2 3>;
         };
 
-        comb_f14 {
-            bindings = <&kp LS(LA(LC(LG(F14))))>;
-            key-positions = <22 23 24>;
-        };
-
-        comb_f15 {
+        comb_lb {
             bindings = <&kp LS(LA(LC(LG(F15))))>;
-            key-positions = <32 33>;
+            key-positions = <22 23 24>;
         };
     };
 
@@ -396,10 +391,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                   &kp Q  &kp W  &kp E                             &kp R                &kp T                 &kp Y          &kp U             &kp I                             &kp O    &kp P
-                   &kp A  &kp S  &hrm LEFT_GUI D                   &hrm LEFT_ALT F      &kp G                 &kp H          &hrm RIGHT_ALT J  &hrm RIGHT_GUI K                  &kp L    &kp SEMI
-&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C                             &kp V                &kp B                 &kp N          &kp M             &kp_comma                         &kp_dot  &que_excl  &hrm RA(RC(RIGHT_GUI)) SINGLE_QUOTE
-                                 &lt_repeat 1 LS(LA(LC(LG(F16))))  &hrm LEFT_SHIFT TAB  &lt_repeat 4 SPACE    &kp BACKSPACE  &shift_capsw      &lt_repeat 2 LS(LA(LC(LG(F17))))
+                   &kp Q  &kp W  &kp E               &kp R                &kp T                 &kp Y          &kp U             &kp I               &kp O    &kp P
+                   &kp A  &kp S  &hrm LEFT_GUI D     &hrm LEFT_ALT F      &kp G                 &kp H          &hrm RIGHT_ALT J  &hrm RIGHT_GUI K    &kp L    &kp SEMI
+&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C               &kp V                &kp B                 &kp N          &kp M             &kp_comma           &kp_dot  &que_excl  &hrm RA(RC(RIGHT_GUI)) SINGLE_QUOTE
+                                 &lt_repeat 1 ENTER  &hrm LEFT_SHIFT TAB  &lt_repeat 4 SPACE    &kp BACKSPACE  &shift_capsw      &lt_repeat 2 ENTER
             >;
         };
 
