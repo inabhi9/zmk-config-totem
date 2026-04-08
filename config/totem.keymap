@@ -129,8 +129,8 @@
             layers = <0 1>;
         };
 
-        comb_f12 {
-            bindings = <&kp LC(LG(LA(LS(F12))))>;
+        comb3_enter_l {
+            bindings = <&kp ENTER>;
             key-positions = <11 12 13>;
             layers = <0>;
         };
@@ -212,8 +212,8 @@
             key-positions = <6 7>;
         };
 
-        emoji {
-            bindings = <&kp LC(LG(SPACE))>;
+        comb3_enter_r {
+            bindings = <&kp ENTER>;
             key-positions = <16 17 18>;
         };
 
@@ -396,10 +396,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                   &kp Q  &kp W  &kp E               &kp R                &kp T                 &kp Y          &kp U             &kp I               &kp O    &kp P
-                   &kp A  &kp S  &hrm LEFT_GUI D     &hrm LEFT_ALT F      &kp G                 &kp H          &hrm RIGHT_ALT J  &hrm RIGHT_GUI K    &kp L    &kp SEMI
-&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C               &kp V                &kp B                 &kp N          &kp M             &kp_comma           &kp_dot  &que_excl  &hrm RA(RC(RIGHT_GUI)) SINGLE_QUOTE
-                                 &lt_repeat 1 ENTER  &hrm LEFT_SHIFT TAB  &lt_repeat 4 SPACE    &kp BACKSPACE  &shift_capsw      &lt_repeat 2 ENTER
+                   &kp Q  &kp W  &kp E                             &kp R                &kp T                 &kp Y          &kp U             &kp I                             &kp O    &kp P
+                   &kp A  &kp S  &hrm LEFT_GUI D                   &hrm LEFT_ALT F      &kp G                 &kp H          &hrm RIGHT_ALT J  &hrm RIGHT_GUI K                  &kp L    &kp SEMI
+&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C                             &kp V                &kp B                 &kp N          &kp M             &kp_comma                         &kp_dot  &que_excl  &hrm RA(RC(RIGHT_GUI)) SINGLE_QUOTE
+                                 &lt_repeat 1 LS(LA(LC(LG(F16))))  &hrm LEFT_SHIFT TAB  &lt_repeat 4 SPACE    &kp BACKSPACE  &shift_capsw      &lt_repeat 2 LS(LA(LC(LG(F16))))
             >;
         };
 
@@ -449,8 +449,8 @@
 
             bindings = <
             &kp LG(LS(NUMBER_4))      &kp F7  &kp F8  &kp F9  &kp F12    &trans  &mkp LCLK        &mmv MOVE_UP    &mkp RCLK         &bt BT_SEL 2
-            &kp LG(LC(LS(NUMBER_4)))  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &bt BT_SEL 1
-&bt BT_CLR  &kp LS(LC(LA(LG(F4))))    &kp F1  &kp F2  &kp F3  &kp F10    &trans  &msc MOVE_Y(20)  &mkp MCLK       &msc MOVE_Y(-20)  &bt BT_SEL 0  &out OUT_TOG
+            &kp LG(LC(LS(NUMBER_4)))  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &mmv MOVE_LEFT   &mkp LCLK       &mmv MOVE_RIGHT   &bt BT_SEL 1
+&bt BT_CLR  &kp LS(LC(LA(LG(F4))))    &kp F1  &kp F2  &kp F3  &kp F10    &trans  &msc MOVE_Y(20)  &mmv MOVE_DOWN  &msc MOVE_Y(-20)  &bt BT_SEL 0  &out OUT_TOG
                                               &trans  &trans  &trans     &trans  &trans           &trans
             >;
         };
