@@ -302,26 +302,6 @@
             flavor = "balanced";
         };
 
-        kp_dot: kp_dot {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_DOT";
-            bindings = <&kp DOT>, <&kp F12>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-            keep-mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-        };
-
-        kp_comma: kp_comma {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_COMMA";
-            bindings = <&kp COMMA>, <&kp F11>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-            keep-mods = <(MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-        };
-
         mm_cmdspace: mm_cmdspace {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_CMDSPACE";
@@ -393,7 +373,7 @@
             bindings = <
                    &kp Q  &kp W  &kp E               &kp R                &kp T                 &kp Y          &kp U             &kp I               &kp O    &kp P
                    &kp A  &kp S  &hrm LEFT_GUI D     &hrm LEFT_ALT F      &kp G                 &kp H          &hrm RIGHT_ALT J  &hrm RIGHT_GUI K    &kp L    &kp SEMI
-&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C               &kp V                &kp B                 &kp N          &kp M             &kp_comma           &kp_dot  &que_excl  &hrm RA(RC(RIGHT_GUI)) SINGLE_QUOTE
+&hrm LCTRL ESCAPE  &kp Z  &kp X  &kp C               &kp V                &kp B                 &kp N          &kp M             &kp COMMA           &kp DOT  &que_excl  &hrm RA(RC(RIGHT_GUI)) SINGLE_QUOTE
                                  &lt_repeat 1 ENTER  &hrm LEFT_SHIFT TAB  &lt_repeat 4 SPACE    &kp BACKSPACE  &shift_capsw      &lt_repeat 2 ENTER
             >;
         };
@@ -443,9 +423,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp LG(LS(NUMBER_4))      &kp F7  &kp F8  &kp F9  &kp F12    &trans  &mkp LCLK        &mmv MOVE_UP    &mkp RCLK         &bt BT_SEL 2
-            &kp LG(LC(LS(NUMBER_4)))  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &mmv MOVE_LEFT   &mkp LCLK       &mmv MOVE_RIGHT   &bt BT_SEL 1
-&bt BT_CLR  &kp LS(LC(LA(LG(F4))))    &kp F1  &kp F2  &kp F3  &kp F10    &trans  &msc MOVE_Y(20)  &mmv MOVE_DOWN  &msc MOVE_Y(-20)  &bt BT_SEL 0  &out OUT_TOG
+            &kp LG(LS(NUMBER_4))      &kp F7  &kp F8  &kp F9  &kp F12    &trans  &mkp LCLK        &mmv MOVE_Y(-200)  &mkp RCLK         &bt BT_SEL 2
+            &kp LG(LC(LS(NUMBER_4)))  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &mmv MOVE_LEFT   &mkp LCLK          &mmv MOVE_RIGHT   &bt BT_SEL 1
+&bt BT_CLR  &kp LS(LC(LA(LG(F4))))    &kp F1  &kp F2  &kp F3  &kp F10    &trans  &msc MOVE_Y(20)  &mmv MOVE_DOWN     &msc MOVE_Y(-20)  &bt BT_SEL 0  &out OUT_TOG
                                               &trans  &trans  &trans     &trans  &trans           &trans
             >;
         };
