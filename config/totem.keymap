@@ -28,6 +28,8 @@
 
 &caps_word { mods = <(MOD_LSFT|MOD_RSFT)>; };
 
+&mmv { trigger-period-ms = <2>; };
+
 / {
     combos {
         compatible = "zmk,combos";
