@@ -423,7 +423,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp LG(LS(NUMBER_4))      &kp F7  &kp F8  &kp F9  &kp F12    &trans  &mkp LCLK        &mmv MOVE_Y(-200)  &mkp RCLK         &bt BT_SEL 2
+            &kp LG(LS(NUMBER_4))      &kp F7  &kp F8  &kp F9  &kp F12    &trans  &mkp LCLK        &mmv MOVE_Y(-500)  &mkp RCLK         &bt BT_SEL 2
             &kp LG(LC(LS(NUMBER_4)))  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &mmv MOVE_LEFT   &mkp LCLK          &mmv MOVE_RIGHT   &bt BT_SEL 1
 &bt BT_CLR  &kp LS(LC(LA(LG(F4))))    &kp F1  &kp F2  &kp F3  &kp F10    &trans  &msc MOVE_Y(20)  &mmv MOVE_DOWN     &msc MOVE_Y(-20)  &bt BT_SEL 0  &out OUT_TOG
                                               &trans  &trans  &trans     &trans  &trans           &trans
