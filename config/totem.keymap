@@ -231,6 +231,11 @@
             bindings = <&kp LS(LA(LC(LG(F15))))>;
             key-positions = <22 23 24>;
         };
+
+        emoji {
+            bindings = <&kp LC(LG(SPACE))>;
+            key-positions = <32 33>;
+        };
     };
 
     behaviors {
