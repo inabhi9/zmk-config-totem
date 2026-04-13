@@ -28,7 +28,10 @@
 
 &caps_word { mods = <(MOD_LSFT|MOD_RSFT)>; };
 
-&mmv { trigger-period-ms = <2>; };
+&mmv {
+    trigger-period-ms = <2>;
+    time-to-max-speed-ms = <10>;
+};
 
 / {
     combos {
