@@ -454,10 +454,10 @@
 
         layer_4 {
             bindings = <
-                        &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LG(LC(T))))    &kp RS(RC(RA(RG(Y))))         &kp LS(LA(LC(LG(U))))   &kp LS(LA(LC(LG(I))))         &kp LS(LA(LC(LG(O))))         &kp LS(LA(LC(LG(P))))
-                        &kp LS(LA(LC(LG(A))))  &kp LA(LS(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))    &kp LS(LA(LG(LC(H))))         &kp LS(LA(LC(LG(J))))   &kp LS(LA(LC(LG(K))))         &kp LS(LA(LC(LG(L))))         &kp LS(LA(LC(LG(SEMI))))
-&kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LC(LA(LG(C))))  &kp LS(LC(LG(LA(V))))  &kp LS(LC(LA(LG(B))))    &kp LS(LA(LC(LG(N))))         &kp LS(LA(LC(LG(M))))   &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(SQT))))
-                                                                      &trans                 &trans                 &trans                   &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(N5))))  &kp LS(LA(LC(LG(NUMBER_6))))
+                        &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LG(LC(T))))    &kp RS(RC(RA(RG(Y))))         &kp LS(LA(LC(LG(U))))         &kp LS(LA(LC(LG(I))))         &kp LS(LA(LC(LG(O))))         &kp LS(LA(LC(LG(P))))
+                        &kp LS(LA(LC(LG(A))))  &kp LA(LS(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))    &kp LS(LA(LG(LC(H))))         &kp LS(LA(LC(LG(J))))         &kp LS(LA(LC(LG(K))))         &kp LS(LA(LC(LG(L))))         &kp LS(LA(LC(LG(SEMI))))
+&kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LC(LA(LG(C))))  &kp LS(LC(LG(LA(V))))  &kp LS(LC(LA(LG(B))))    &kp LS(LA(LC(LG(N))))         &kp LS(LA(LC(LG(M))))         &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(NUMBER_5))))  &kp LS(LA(LC(LG(NUMBER_6))))  &kp LS(LA(LC(LG(SQT))))
+                                                                      &trans                 &trans                 &trans                   &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))
             >;
         };
 
